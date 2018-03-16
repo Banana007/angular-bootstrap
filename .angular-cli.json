@@ -19,9 +19,17 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootswatch/dist/darkly/bootstrap.min.css",
+        "../node_modules/font-awesome/scss/font-awesome.scss"
+
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
+      "addons":[
+        "../node_modules/font-awesome/fonts/*.+(otf|oet|svg|ttf|woff|woff2)"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
